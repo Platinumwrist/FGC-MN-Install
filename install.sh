@@ -2,11 +2,11 @@
 clear
 
 # Set these to change the version of fantasygold to install
-TARBALLURL="https://github.com/FantasyGold/FantasyGold/releases/download/1.2.4/FantasyGold-1.2.4.0-linux64.tar.gz"
-TARBALLNAME="fantasygold-1.2.4.0-linux64.tar.gz"
-BOOTSTRAPURL="https://github.com/fantasygold-crypto/fantasygold/releases/download/1.2.4/bootstrap.dat.zip"
-BOOTSTRAPARCHIVE="bootstrap.dat.zip"
-FGCVERSION="1.2.4.0"
+TARBALLURL="https://github.com/MajorLeagueDFS/FantasyGold/releases/download/1.0.0/linux.tar.gz"
+TARBALLNAME="linux.tar.gz"
+#BOOTSTRAPURL="https://github.com/fantasygold-crypto/fantasygold/releases/download/1.2.4/bootstrap.dat.zip"
+#BOOTSTRAPARCHIVE="bootstrap.dat.zip"
+FGCVERSION="1.0.0"
 
 # Check if we are root
 if [ "$(id -u)" != "0" ]; then
@@ -123,6 +123,7 @@ if [[ ("$UFW" == "y" || "$UFW" == "Y" || "$UFW" == "") ]]; then
   ufw default allow outgoing
   ufw allow ssh
   ufw allow 57804/tcp
+  ufw allow 57806/tcp
   yes | ufw enable
 fi
 
