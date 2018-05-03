@@ -1,6 +1,6 @@
 ## System requirements
 
-The VPS you plan to install your masternode on needs to have at least 2GB of RAM and 10GB of free disk space. We do not recommend using servers who do not meet those criteria, and your masternode will not be stable.
+The VPS you plan to install your masternode on needs to have at least 1GB of RAM and 10GB of free disk space. We do not recommend using servers who do not meet those criteria, and your masternode will not be stable.
 
 ## Funding your Masternode
 
@@ -47,13 +47,13 @@ Close your wallet and open the FantasyGold Appdata folder. Its location depends 
 In your appdata folder, open masternode.conf with a text editor and add a new line in this format to the bottom of the file:
 
 ```bash
-masternodename ipaddress:57804 genkey collateralTxID outputID
+masternodename ipaddress:57810 genkey collateralTxID outputID
 ```
 
 An example would be
 
 ```
-mn1 127.0.0.2:57804 93HaYBVUCYjEMeeH1Y4sBGLALQZE1Yc1K64xiqgX37tGBDQL8Xg 2bcd3c84c84f87eaa86e4e56834c92927a07f9e18718810b92e0d0324456a67c 0
+mn1 127.0.0.2:57810 93HaYBVUCYjEMeeH1Y4sBGLALQZE1Yc1K64xiqgX37tGBDQL8Xg 2bcd3c84c84f87eaa86e4e56834c92927a07f9e18718810b92e0d0324456a67c 0
 ```
 
 _masternodename_ is a name you choose, _ipaddress_ is the public IP of your VPS, masternodeprivatekey is the output from `masternode genkey`, and _collateralTxID_ & _outputID_ come from `masternode outputs`. Please note that _masternodename_ must not contain any spaces, and should not contain any special characters.
