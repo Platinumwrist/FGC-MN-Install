@@ -2,8 +2,8 @@
 clear
 
 # Set these to change the version of fantasygold to install
-TARBALLURL="https://github.com/MajorLeagueDFS/FantasyGold/releases/download/1.0.0/linux.tar.gz"
-TARBALLNAME="linux.tar.gz"
+TARBALLURL="https://github.com/FantasyGold/FantasyGold-Core/releases/download/1.0.1.0/FantasyGold.1.0.1.0.-.Linux.x64.tar.gz"
+TARBALLNAME="FantasyGold.1.0.1.0.-.Linux.x64.tar.gz"
 #BOOTSTRAPURL="https://github.com/fantasygold-crypto/fantasygold/releases/download/1.2.4/bootstrap.dat.zip"
 #BOOTSTRAPARCHIVE="bootstrap.dat.zip"
 FGCVERSION="1.0.0"
@@ -122,8 +122,8 @@ if [[ ("$UFW" == "y" || "$UFW" == "Y" || "$UFW" == "") ]]; then
   ufw default deny incoming
   ufw default allow outgoing
   ufw allow ssh
-  ufw allow 57804/tcp
-  ufw allow 57806/tcp
+  ufw allow 57810/tcp
+  ufw allow 57814/tcp
   yes | ufw enable
 fi
 
@@ -157,7 +157,7 @@ daemon=1
 logtimestamps=1
 maxconnections=256
 externalip=${IP}
-bind=${IP}:57806
+bind=${IP}:57810
 masternodeaddr=${IP}
 masternodeprivkey=${KEY}
 masternode=1
