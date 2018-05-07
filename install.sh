@@ -2,11 +2,11 @@
 clear
 
 # Set these to change the version of fantasygold to install
-TARBALLURL="https://github.com/FantasyGold/FantasyGold-Core/releases/download/1.0.1.0/FantasyGold.0.1.0.1.-.Linux.x64.tar.gz"
-TARBALLNAME="FantasyGold.1.0.1.0.-.Linux.x64.tar.gz"
+TARBALLURL="https://github.com/FantasyGold/FantasyGold-Core/releases/download/1.2.4/FantasyGold-1.2.4-Linux-x64.tar.gz"
+TARBALLNAME="FantasyGold-1.2.4-Linux-x64.tar.gz"
 #BOOTSTRAPURL="https://github.com/fantasygold-crypto/fantasygold/releases/download/1.2.4/bootstrap.dat.zip"
 #BOOTSTRAPARCHIVE="bootstrap.dat.zip"
-FGCVERSION="1.0.0"
+FGCVERSION="1.2.4"
 
 # Check if we are root
 if [ "$(id -u)" != "0" ]; then
